@@ -11,22 +11,33 @@ The goal of this portfolio is to demonstrate my understanding of SQL concepts fr
 ```text
 sql-portfolio/
 │
-├── datasets/
-│   └── Parks_and_Rec_Create_db.sql
+├── Parks_and_rec/
+│   ├── Parks_and_Rec_Create_db.sql
+│
+├── Synthetic_sales_data/
+│   ├── Product_sales_Project.sql
+│   ├── Synthetic_sales_data_mysql.sql
+│   └── sales_data.csv
+│
+├── world_layoffs/
+│   ├── Data Cleaning Project.sql
+│   ├── Exploratory Data Analysis.sql
+│   ├── World_layoffs_db.sql
+│   └── layoffs.csv
 │
 ├── 1. Select Statement.sql
 ├── 2. Where Clause Statement.sql
-├── 3. Group by + Order by.sql
-├── 4. Having vs Where clause.sql
-├── 5. Limit & Aliasing clause.sql
+├── 3. Group By + Order By.sql
+├── 4. Having vs Where Clause.sql
+├── 5. Limit & Aliasing Clause.sql
 ├── 6. Joins Clauses.sql
-├── 7. Union clause.sql
+├── 7. Union Clause.sql
 ├── 8. String Functions.sql
-├── 9. Case statement.sql
-├── 10. Subqueries clause.sql
-├── 11. Window functions.sql
-├── 12. CTEs Clause(Statement).sql
-├── 13. Temporary Tables Clause(Statement).sql
+├── 9. Case Statement.sql
+├── 10. Subqueries Clause.sql
+├── 11. Window Functions.sql
+├── 12. CTEs Clause (Statement).sql
+├── 13. Temporary Tables Clause (Statement).sql
 ├── 14. Stored Procedures.sql
 ├── 15. Triggers and Events.sql
 │
