@@ -373,7 +373,7 @@ Product_Sales_Project
 ├── Product_sales_Project.sql
 ├── README.md
 └── dataset
-
+```
 
 
 # Purpose of This Portfolio
