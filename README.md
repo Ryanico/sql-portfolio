@@ -12,18 +12,7 @@ The goal of this portfolio is to demonstrate my understanding of SQL concepts fr
 sql-portfolio/
 │
 ├── Parks_and_rec/
-│   ├── Parks_and_Rec_Create_db.sql
-│
-├── Synthetic_sales_data/
-│   ├── Product_sales_Project.sql
-│   ├── Synthetic_sales_data_mysql.sql
-│   └── sales_data.csv
-│
-├── world_layoffs/
-│   ├── Data Cleaning Project.sql
-│   ├── Exploratory Data Analysis.sql
-│   ├── World_layoffs_db.sql
-│   └── layoffs.csv
+│   └── Parks_and_Rec_Create_db.sql
 │
 ├── 1. Select Statement.sql
 ├── 2. Where Clause Statement.sql
@@ -40,6 +29,17 @@ sql-portfolio/
 ├── 13. Temporary Tables Clause (Statement).sql
 ├── 14. Stored Procedures.sql
 ├── 15. Triggers and Events.sql
+│
+├── Synthetic_sales_data/
+│   ├── Product_sales_Project.sql
+│   ├── Synthetic_sales_data_mysql.sql
+│   └── sales_data.csv
+│
+├── world_layoffs/
+│   ├── Data Cleaning Project.sql
+│   ├── Exploratory Data Analysis.sql
+│   ├── World_layoffs_db.sql
+│   └── layoffs.csv
 │
 └── README.md
 ```
