@@ -462,6 +462,12 @@ SELECT *
 FROM ranked_sales;
 
 -- Identify seasonal trends in sales.
+SELECT
+    MONTH(Sale_Date) AS sales_month,
+    SUM(Sales_Amount) AS total_sales
+FROM sales_data
+GROUP BY MONTH(Sale_Date)
+ORDER BY sales_month;
 
 -- Compare online vs retail sales performance.
 WITH online_retail_sales AS
