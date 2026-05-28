@@ -41,6 +41,13 @@ sql-portfolio/
 │   ├── World_layoffs_db.sql
 │   └── layoffs.csv
 │
+│
+├── Superstore_sales/
+│   ├── Superstore_sales_data.csv          # Raw dataset of transactional sales records
+│   ├── Superstore_sales_db.sql            # Database schema creation script
+│   └── Superstore_sales_project.sql       # SQL queries and analysis project
+│
+│
 └── README.md
 ```
 
