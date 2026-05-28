@@ -32,7 +32,7 @@ sql-portfolio/
 │
 ├── Synthetic_sales_data/
 │   ├── Product_sales_Project.sql
-│   ├── Synthetic_sales_data_mysql.sql
+│   ├── Synthetic_sales_data_db.sql
 │   └── sales_data.csv
 │
 ├── world_layoffs/
