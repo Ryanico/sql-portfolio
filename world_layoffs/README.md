@@ -1,6 +1,6 @@
 
 
-# 2. World Layoffs Data Cleaning Project README
+# World Layoffs Data Cleaning Project
 
 ## Project Title
 
@@ -183,7 +183,7 @@ The final dataset became:
 
 ---
 
-# 3. World Layoffs Exploratory Data Analysis README
+# World Layoffs Exploratory Data Analysis
 
 ## Project Title
 
