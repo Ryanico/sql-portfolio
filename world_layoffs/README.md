@@ -1,5 +1,192 @@
 
 
+# 2. World Layoffs Data Cleaning Project README
+
+## Project Title
+
+World Layoffs Data Cleaning in MySQL
+
+---
+
+## Project Overview
+
+This project focuses on cleaning and preparing a global layoffs dataset using MySQL. The goal of the project was to transform raw and inconsistent data into a structured, standardized, and analysis-ready dataset.
+
+The project demonstrates practical SQL data cleaning techniques commonly used in real-world data analytics and data engineering workflows.
+
+---
+
+## Objectives
+
+The main objectives of this project were:
+
+* Remove duplicate records
+* Standardize inconsistent data
+* Handle null and blank values
+* Convert date formats into proper SQL DATE datatype
+* Prepare the dataset for exploratory data analysis
+* Improve overall data quality and reliability
+
+---
+
+## SQL Concepts & Techniques Used
+
+### Data Cleaning
+
+* Duplicate removal
+* Null value handling
+* Data standardization
+* String trimming
+* Date conversion
+* Table restructuring
+
+### SQL Functions & Features
+
+* `ROW_NUMBER()` window function
+* `CTEs (Common Table Expressions)`
+* `TRIM()`
+* `STR_TO_DATE()`
+* `ALTER TABLE`
+* `DELETE`
+* `UPDATE`
+* `JOIN`
+* `PARTITION BY`
+
+---
+
+## Key Tasks Performed
+
+### 1. Removing Duplicates
+
+Used the `ROW_NUMBER()` window function to identify duplicate records based on multiple columns.
+
+```sql
+ROW_NUMBER() OVER(
+PARTITION BY company, location, industry,
+total_laid_off, percentage_laid_off,
+`date`, stage, country, funds_raised_millions
+)
+```
+
+Duplicate rows were isolated and removed from the staging table.
+
+---
+
+### 2. Standardizing Data
+
+Several inconsistencies in the dataset were cleaned:
+
+* Removed extra spaces using `TRIM()`
+* Standardized industry names such as:
+
+  * `Crypto Currency`
+  * `CryptoCurrency`
+  * `Crypto`
+
+into a single value:
+
+```sql
+Crypto
+```
+
+* Standardized country names
+* Fixed formatting inconsistencies
+
+---
+
+### 3. Converting Dates
+
+The original date column was stored as text.
+
+The project converted it into a proper SQL `DATE` datatype using:
+
+```sql
+STR_TO_DATE(`date`, '%m/%d/%Y')
+```
+
+Then modified the column datatype:
+
+```sql
+ALTER TABLE layoffs_staging2
+MODIFY COLUMN `date` DATE;
+```
+
+---
+
+### 4. Handling Null Values
+
+The project:
+
+* Identified blank and null fields
+* Filled missing industry values using self joins
+* Removed records containing unusable null data
+
+---
+
+## Dataset Information
+
+The dataset contains information about:
+
+* Company layoffs
+* Industries
+* Locations
+* Company stages
+* Total employees laid off
+* Percentage laid off
+* Funding raised
+* Dates of layoffs
+
+---
+
+## Skills Demonstrated
+
+This project demonstrates:
+
+* Data cleaning skills
+* SQL problem-solving
+* Window functions
+* Data transformation
+* Analytical thinking
+* Real-world ETL preparation
+
+---
+
+## Business Value
+
+Clean data is critical for:
+
+* Accurate reporting
+* Reliable analysis
+* Business intelligence dashboards
+* Trend analysis
+* Decision making
+
+This project simulates the real-world preprocessing stage performed before analytics and visualization.
+
+---
+
+## Tools Used
+
+* MySQL
+* SQL Workbench
+
+---
+
+## Outcome
+
+The final dataset became:
+
+* cleaner
+* standardized
+* analysis-ready
+* more reliable for exploratory data analysis
+
+---
+
+# 3. World Layoffs Exploratory Data Analysis README
+
+## Project Title
+
 World Layoffs Exploratory Data Analysis Using SQL
 
 ---
