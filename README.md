@@ -4,7 +4,6 @@ Welcome to my SQL portfolio repository. This repository contains my SQL practice
 
 The goal of this portfolio is to demonstrate my understanding of SQL concepts from beginner to advanced level through practical examples and hands-on exercises.
 
-
 ---
 
 # Repository Structure
